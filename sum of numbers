@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int num1 = 10, num2 = 20;  // Two numbers to be added
+    int sum;
+    int *ptr1 = &num1;  // Pointer to the first number
+    int *ptr2 = &num2;  // Pointer to the second number
+
+    // Add the numbers using pointers
+    sum = *ptr1 + *ptr2;  // Dereference the pointers and add the values
+
+    printf("Sum of %d and %d is: %d\n", *ptr1, *ptr2, sum);  // Print the result
+
+    return 0;
+}
+Sum of 10 and 20 is: 30
