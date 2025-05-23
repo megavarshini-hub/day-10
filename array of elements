@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int arr[] = {10, 20, 30, 40, 50}; // Array of integers
+    int *ptr = arr;  // Pointer pointing to the first element of the array
+
+    // Print the array elements using pointer
+    printf("Array elements using pointer:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", *(ptr + i));  // Access array element using pointer arithmetic
+    }
+    printf("\n");
+
+    return 0;
+}
+Array elements using pointer:
+10 20 30 40 50
